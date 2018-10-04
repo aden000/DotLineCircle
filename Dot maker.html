@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<html>
+    <head>
+		    <script src="dotMakerJavascript.js"></script>
+        <link rel="stylesheet" href="control.css">
+    </head>
+    <body bgcolor="white">
+      <div class="controlable">
+        <form name="dotInput" action="" method="GET">
+          Make Dot!<br>
+          X: <input type="number" name="xx" id="tb1"><br>
+          Y: <input type="number" name="yy" id="tb2"><br>
+          <input type="button" id="btn1" value="GAMBAR!" onclick="sendVal(this.form)">
+        </form>
+        <div class="separator"></div>
+        <form name="lineInput" action="" method="get">
+          Make Line from 2 dot!<br>
+          X1: <input type="number" name="x1" id="tb3"> X2: <input type="number" name="x2" id="tb4"> <br>
+          Y1: <input type="number" name="y1" id="tb5"> Y2: <input type="number" name="y2" id="tb6"> <br>
+          <input type="button" id="btn2" value="DDR" onclick="lineCreateDDR(this.form)">
+          <input type="button" id="btn3" value="Bressenham" onclick="lineCreateBressenham(this.form)">
+        <br>
+        </form>
+        <div class="separator"></div>
+        <form name="Lyncaran" action="" method="get">
+          Make Circle<br>
+          X: <input type="number" name="x" id="tb1"><br>
+          Y: <input type="number" name="y" id="tb2"><br>
+          r: <input type="number" name="r" id="jr1"><br>
+          <input type="button" id="btn4" value="Lingkaran" onclick="CircleCreate(this.form)">
+          <br>
+        </form>
+        <div class="separator"></div>
+        <center id="info"><br><a href="http://jsfiddle.net/nwellcome/mJyps/5/">Pingin sumberny?</a> - Canvas Size: 1345x630 pixel <input type="button" id="btn10" value="CLEAR CANVAS" onclick="clearCanvas()"></center>
+
+      </div>
+      <div class="kyanfazu">
+        <canvas id="myCanvas" width="1345" height="630"></canvas>
+      </div>
+      <!-- i Get Some Sauce -->
+    </body>
+</html>
